@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int scores1[2];
+    int scores2[4];
+    double avg1 = 0, avg2 = 0;
+
+    printf("Введите баллы первой команды:\n");
+    for(int i = 0; i < 2; i++) {
+        scanf("%d", &scores1[i]);
+        avg1 += scores1[i];
+    }
+    avg1 /= 2;
+
+    printf("Введите баллы второй команды:\n");
+    for(int i = 0; i < 4; i++) {
+        scanf("%d", &scores2[i]);
+        avg2 += scores2[i];
+    }
+    avg2 /= 4;
+
+    if(avg1 > avg2) {
+        printf("1\n");
+    } else if(avg2 > avg1) {
+        printf("2\n");
+    } else {
+        printf("3\n");
+    }
+
+    return 0;
+}

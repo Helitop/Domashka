@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int number, a, b, c, d, e, f;
+
+    printf("Введите шестизначное число:");
+    scanf("%d", &number);
+
+    if (number < 100000 || number > 999999) {
+        printf("Ошибка\n");
+    } else {
+        a = number / 100000;
+        b = (number / 10000) % 10;
+        c = (number / 1000) % 10;
+        d = (number / 100) % 10;
+        e = (number / 10) % 10;
+        f = number % 10;
+
+        if (a + b + c == d + e + f) {
+            printf("YES\n");
+        } else {
+            printf("NO\n");
+        }
+    }
+
+    return 0;
+}

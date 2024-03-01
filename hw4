@@ -1,0 +1,25 @@
+# include <stdio.h>
+
+int main() {
+    int choice;
+    float distance, result;
+
+    printf("1 - дюймы >> сантиметры, 2 - сантиметры >> дюймы: ");
+    scanf("%d", &choice);
+
+    if (choice == 1) {
+        printf("Введите расстояние в дюймах: ");
+        scanf("%f", &distance);
+        result = distance * 2.54;
+        printf("Расстояние в сантиметрах: %.2f\n", result);
+    } else if (choice == 2) {
+        printf("Введите расстояние в сантиметрах: ");
+        scanf("%f", &distance);
+        result = distance / 2.54;
+        printf("Расстояние в дюймах: %.2f\n", result);
+    } else {
+        printf("Неверное значение\n");
+    }
+
+    return 0;
+}

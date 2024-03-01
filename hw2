@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int
+main ()
+{
+  int number;
+
+  printf ("PP2P5P4P8QP5 QP8QP;P>: ");
+  scanf ("%d", &number);
+
+  if (number % 2 == 0)
+	{
+	  printf ("YES\n");
+	}
+  else
+	{
+	  printf ("NO\n");
+	}
+
+  return 0;
+}
